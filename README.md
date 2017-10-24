@@ -4,9 +4,11 @@ Runs an [Nginx](https://nginx.org) as proxy for [Docker Registry](https://github
 
 ## Getting Started
 
-Available on the Docker Index as [axelspringer/exhibitor](https://index.docker.io/u/axelspringer/exhibitor/):
+Available on the Docker Index as [axelspringer/registry-proxy](https://index.docker.io/u/axelspringer/registry-proxy/):
 
-    `docker pull axelspringer/registry-proxy`
+```bash
+docker pull axelspringer/registry-proxy
+```
 
 [![](https://badge.imagelayers.io/axelspringer/registry-proxy:1.13.5.svg)](https://imagelayers.io/?images=axelspringer/registry-proxy:1.13.5.svg)
 
