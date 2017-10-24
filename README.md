@@ -16,7 +16,7 @@ docker pull axelspringer/registry-proxy
 The container expects the following environment variables to be passed in:
 
 * `DOCKER_REGISTRY_DOMAIN` - is the accessible registry domain (e.g. registry.example.com)
-* `DOCKER_REGISTRY_HOSTNAME` - is the hostname of the registry to connect (e.g. registry)
+* `DOCKER_REGISTRY_HOST` - is the hostname of the registry to connect (e.g. registry)
 * `DOCKER_REGISTRY_PORT` - is the port the registry listens on (e.g. 5000)
 
 > It is highly recommended to further proxy this proxy
@@ -25,7 +25,7 @@ Starting the container:
 
     docker run -p 80:80 \
         -e DOCKER_REGISTRY_DOMAIN=registry.example.com \
-        -e DOCKER_REGISTRY_HOSTNAME=registry \
+        -e DOCKER_REGISTRY_HOST=registry \
         -e DOCKER_REGISTRY_PORT=5000 \
         axelspringer/registry-proxy:1.13.5
 
